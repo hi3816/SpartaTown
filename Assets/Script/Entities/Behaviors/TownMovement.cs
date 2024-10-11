@@ -18,7 +18,6 @@ public class TownMovement : MonoBehaviour
     {
         // OnMoveEvent에 Move를 호출하라고 등록함
         movementController.OnMoveEvent += Move;
-        Debug.Log("Start");
     }
 
     private void FixedUpdate()
@@ -29,7 +28,6 @@ public class TownMovement : MonoBehaviour
 
     private void Move(Vector2 direction)
     {
-        Debug.Log(direction);
         // 이동방향만 정해두고 실제로 움직이지는 않음.
         // 움직이는 것은 물리 업데이트에서 진행(rigidbody가 물리니까)
         movementDirection = direction;

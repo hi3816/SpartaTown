@@ -24,7 +24,6 @@ public class TownAnimationController : AnimationController
 
     private void Move(Vector2 obj)
     {
-        Debug.Log("속도가:" + obj.magnitude);
         animator.SetBool(IsWalking, obj.magnitude > magnituteThreshold);
     }
 
