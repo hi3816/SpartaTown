@@ -24,7 +24,14 @@ public class TownAnimationController : AnimationController
 
     private void Move(Vector2 obj)
     {
-        animator.SetBool(IsWalking, obj.magnitude > magnituteThreshold);
+        if (animator != null)
+        {
+            animator.SetBool(IsWalking, obj.magnitude > magnituteThreshold);
+        }
+        else
+        {
+            Debug.LogError("Animator is not initialized.");
+        }
     }
 
     // OnAttackEvent가 Action<AttackSO>이기 때문에 Attacking이 AttackSO를 사용하지 않아도 매개변수로 가지고 있어야 합니다.

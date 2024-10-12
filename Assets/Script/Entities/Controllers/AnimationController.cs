@@ -5,7 +5,7 @@ public partial class PlayerInputController
 {
     public class AnimationController : MonoBehaviour
     {
-        protected Animator animator;
+        public Animator animator;
         protected TownController controller;
 
         protected virtual void Awake()

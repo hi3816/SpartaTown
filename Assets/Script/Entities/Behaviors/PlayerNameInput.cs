@@ -21,7 +21,6 @@ public class PlayerNameInput : MonoBehaviour
             {
                 displayNameText.text = "Player Name: " + playerName;
                 GameManager.Instance.playerName = playerName;
-                SceneManager.LoadScene("SampleScene");
             }
             else 
             {

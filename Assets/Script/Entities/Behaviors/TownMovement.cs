@@ -5,7 +5,7 @@ public class TownMovement : MonoBehaviour
 {
     private TownController movementController;
     private Rigidbody2D movementRigidbody;
-    [SerializeField] private SpriteRenderer characterRenderer;
+    public SpriteRenderer characterRenderer;
 
     private Vector2 movementDirection = Vector2.zero;
     private Vector2 aimDirection = Vector2.right;

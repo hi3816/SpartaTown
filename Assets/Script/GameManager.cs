@@ -1,10 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+
+
+    public string playerName;
+    public int SelectCharacterIndex;
+
+    [Header("Character Prefabs")]
+    public GameObject[] characterPrefabs; // 캐릭터 프리팹 배열
 
     private void Awake()
     {
@@ -19,8 +27,13 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject); // 씬 전환 시 파괴되지 않음
     }
 
-    // 플레이어 이름 등 필요한 데이터 저장
-    public string playerName;
-
+    public GameObject GetCharacterPrefab(int index)
+    {
+        if (index >= 0 && index < characterPrefabs.Length)
+        {
+            return characterPrefabs[index];
+        }
+        return null; // 유효하지 않은 인덱스일 경우 null 반환
+    }
 
 }

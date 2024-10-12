@@ -36,7 +36,6 @@ public class CameraFollow : MonoBehaviour
     {
         // Get the bounds of the tilemap in cell coordinates
         BoundsInt bounds = tilemap.cellBounds;
-        Debug.Log("bounds : " + bounds);
 
         // Convert the bounds to world coordinates
         Vector3 min = tilemap.CellToWorld(bounds.min);
