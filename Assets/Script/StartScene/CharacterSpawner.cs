@@ -2,7 +2,7 @@
 
 public class CharacterSpawner : MonoBehaviour
 {
-    public int characterIndex; // 생성할 캐릭터 인덱스
+    private int characterIndex; // 생성할 캐릭터 인덱스
 
     void Start()
     {

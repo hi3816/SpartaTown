@@ -30,6 +30,5 @@ public partial class PlayerInputController : TownController
 
     public void OnFire(InputValue value)
     {
-        Debug.Log("OnFire" + value.ToString());
     }
 }
