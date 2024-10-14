@@ -1152,6 +1152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: 
+  SelectCharacterIndex: 0
   characterPrefabs:
   - {fileID: 7245262250140302843, guid: 28919a8bee94c9d43a138931bd6db60b, type: 3}
   - {fileID: 7245262250140302843, guid: e0ab6ed631c2ce742bc43bc11b750aca, type: 3}
@@ -1276,37 +1277,6 @@ MonoBehaviour:
   characterButtons:
   - {fileID: 502878603}
   - {fileID: 570797825}
---- !u!1 &1658668120
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1658668121}
-  m_Layer: 0
-  m_Name: SelectCharacter
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1658668121
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658668120}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.91, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1676510110
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,6 +1800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerNameInput: {fileID: 2049246200}
+  character: {fileID: 0}
 --- !u!1 &2049246195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,7 +1996,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 595697989}
-  - {fileID: 1658668121}
   - {fileID: 1734775954}
   - {fileID: 1265646691}
   - {fileID: 1101768054}

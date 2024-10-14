@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
 
     public string playerName;
-    public int SelectCharacterIndex;
+    public int SelectCharacterIndex = -1;
 
     [Header("Character Prefabs")]
     public GameObject[] characterPrefabs; // 캐릭터 프리팹 배열
